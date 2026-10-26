@@ -2,81 +2,226 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>معمل واستوديو سهم السرعة للتجارة</title>
-<meta name="description" content="معمل واستوديو سهم السرعة للتجارة - خدمات الطباعة والتصميم والتصوير والإعلانات في الرياض">
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f5f7fb;color:#17243b;line-height:1.9}
-header{background:#101e35;color:white;padding:22px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px}
-.logo{font-size:23px;font-weight:bold;color:#f6c453}
-nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px}
-.hero{padding:75px 7%;text-align:center;background:linear-gradient(135deg,#122744,#176b83);color:white}
-.hero h1{font-size:clamp(28px,5vw,45px);margin:0 0 15px}
-.hero p{font-size:18px;max-width:700px;margin:0 auto 25px}
-.btn{display:inline-block;background:#f6c453;color:#14243c;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px}
-section{padding:45px 7%}
-h2{text-align:center;font-size:29px;margin:0 0 25px}
-.intro{text-align:center;max-width:800px;margin:auto}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-.card{background:white;padding:24px;border-radius:13px;box-shadow:0 5px 20px #14243c12;border:1px solid #e8edf4}
-.card h3{color:#176b83;margin-top:0}
-.icon{font-size:32px}
-.contact{background:#e8f1f5;text-align:center}
-footer{background:#101e35;color:white;text-align:center;padding:22px}
-.small{font-size:13px;color:#d3dce8}
-@media(max-width:600px){header{justify-content:center;text-align:center}nav{width:100%}.hero{padding:55px 5%}section{padding:35px 5%}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b32">
+  <meta name="description" content="معمل واستوديو سهم السرعة للتجارة - طباعة وتصميم وإعلانات وتصوير وسير ذاتية في الرياض">
+  <title>سهم السرعة | للطباعة والتصميم والإعلان</title>
+  <style>
+    :root {
+      --navy: #101b32;
+      --blue: #1769d2;
+      --gold: #e9b95d;
+      --light: #f4f7fb;
+      --text: #243047;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: white;
+      color: var(--text);
+      line-height: 1.9;
+    }
+    a { text-decoration: none; }
+    .container { width: min(1100px, 92%); margin: auto; }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 15px 0;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 21px; font-weight: bold; }
+    .brand span { color: var(--gold); }
+    nav { display: flex; gap: 17px; flex-wrap: wrap; }
+    nav a { color: white; font-size: 14px; }
+    .hero {
+      background: linear-gradient(135deg, #101b32, #173c70);
+      color: white;
+      padding: 78px 0;
+      text-align: center;
+    }
+    .tag {
+      color: var(--gold);
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+    h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.5; margin: 10px 0; }
+    .hero p { max-width: 680px; margin: 15px auto 25px; color: #e4eaf4; }
+    .buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 11px 22px;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+    .btn-gold { background: var(--gold); color: #182239; }
+    .btn-outline { border: 1px solid #d7e3f6; color: white; }
+    section { padding: 55px 0; }
+    .soft { background: var(--light); }
+    .section-title { text-align: center; margin-bottom: 30px; }
+    .section-title h2 { color: var(--navy); margin: 0 0 5px; font-size: 29px; }
+    .section-title p { margin: 0; color: #66738a; }
+    .about {
+      max-width: 790px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 17px;
+    }
+    .service {
+      background: white;
+      border: 1px solid #e5eaf1;
+      border-radius: 14px;
+      padding: 23px;
+      box-shadow: 0 5px 18px #132b4b0b;
+    }
+    .service .icon { font-size: 32px; }
+    .service h3 { color: var(--navy); margin: 8px 0; }
+    .service p { margin: 0; color: #657187; font-size: 14px; }
+    .contact-box {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      border-radius: 17px;
+    }
+    .contact-box h2 { margin-top: 0; }
+    .contact-box p { color: #e0e7f2; }
+    footer {
+      background: #0b1324;
+      color: #c8d1e0;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 13px;
+    }
+    .float-wa {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      background: #20b95b;
+      color: white;
+      padding: 12px 17px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 5px 18px #0003;
+      z-index: 5;
+    }
+    @media (max-width: 600px) {
+      .nav { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 55px 0; }
+      section { padding: 42px 0; }
+    }
+  </style>
 </head>
 <body>
-<header>
-<div class="logo">سهم السرعة</div>
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#about">من نحن</a>
-<a href="#services">خدماتنا</a>
-<a href="#contact">اتصل بنا</a>
-</nav>
-</header>
+  <header>
+    <div class="container nav">
+      <div class="brand">سهم <span>السرعة</span></div>
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<div class="hero" id="home">
-<h1>معمل واستوديو سهم السرعة للتجارة</h1>
-<p>حلول الطباعة والتصميم والإعلانات في مكان واحد. نعمل على تقديم خدمات مميزة تلبي احتياجات الأفراد والشركات.</p>
-<a class="btn" href="#services">اكتشف خدماتنا</a>
-<a class="btn" href="#contact">تواصل معنا</a>
-</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="tag">معمل واستوديو سهم السرعة للتجارة</div>
+        <h1>أفكارك علينا… وإبداعنا بين يديك</h1>
+        <p>خدمات الطباعة والتصميم والإعلانات والتصوير وإعداد السير الذاتية، باهتمام بالتفاصيل وجودة في التنفيذ.</p>
+        <div class="buttons">
+          <a class="btn btn-gold" href="https://wa.me/966554924051" target="_blank" rel="noopener">تواصل معنا عبر واتساب</a>
+          <a class="btn btn-outline" href="#services">اكتشف خدماتنا</a>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-<h2>من نحن</h2>
-<p class="intro">معمل واستوديو سهم السرعة للتجارة، وجهتك لخدمات الطباعة والتصميم وتجهيز المواد الإعلانية. نسعى إلى تقديم أعمال بجودة عالية واهتمام بالتفاصيل وخدمة تلبي تطلعات عملائنا.</p>
-</section>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>من نحن</h2>
+          <p>خدمات متكاملة للأفراد والشركات</p>
+        </div>
+        <div class="about">
+          <p>نقدم في <strong>معمل واستوديو سهم السرعة للتجارة</strong> حلولًا متنوعة في الطباعة والتصميم والإعلانات والتصوير وتجهيز المستندات. هدفنا تقديم خدمة مميزة وتسهيل احتياجات عملائنا بخطوات واضحة وسريعة.</p>
+        </div>
+      </div>
+    </section>
 
-<section id="services">
-<h2>خدماتنا</h2>
-<div class="services">
-<div class="card"><div class="icon">🖨️</div><h3>الطباعة</h3><p>خدمات الطباعة للأوراق والمستندات والمواد المختلفة حسب الطلب.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>التصميم الجرافيكي</h3><p>تصميم الشعارات وبطاقات العمل والمطبوعات التجارية.</p></div>
-<div class="card"><div class="icon">📢</div><h3>الإعلانات واللوحات</h3><p>تصميم وتجهيز المواد الإعلانية واللوحات حسب احتياجك.</p></div>
-<div class="card"><div class="icon">📸</div><h3>التصوير</h3><p>خدمات الصور الشخصية وتجهيز الصور بالمقاسات المطلوبة.</p></div>
-<div class="card"><div class="icon">📄</div><h3>السير الذاتية</h3><p>تنسيق وتصميم السير الذاتية بصورة احترافية.</p></div>
-<div class="card"><div class="icon">💼</div><h3>خدمات الشركات</h3><p>تصميم وتجهيز المواد المكتبية والمطبوعات التجارية.</p></div>
-</div>
-</section>
+    <section class="soft" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>خدماتنا</h2>
+          <p>كل ما تحتاجه في مكان واحد</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <div class="icon">🖨️</div>
+            <h3>الطباعة والنسخ</h3>
+            <p>طباعة المستندات والأوراق وتجهيز الملفات للطباعة.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🎨</div>
+            <h3>التصميم الجرافيكي</h3>
+            <p>تصميم الإعلانات والبطاقات والمواد التعريفية.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🪧</div>
+            <h3>اللوحات والإعلانات</h3>
+            <p>تصميم وتجهيز مواد دعائية تناسب نشاطك التجاري.</p>
+          </article>
+          <article class="service">
+            <div class="icon">📷</div>
+            <h3>التصوير</h3>
+            <p>تجهيز الصور الشخصية وصور المستندات حسب المقاس المطلوب.</p>
+          </article>
+          <article class="service">
+            <div class="icon">📄</div>
+            <h3>السير الذاتية</h3>
+            <p>إعداد وتنسيق السير الذاتية بشكل احترافي وواضح.</p>
+          </article>
+          <article class="service">
+            <div class="icon">🏢</div>
+            <h3>خدمات الشركات</h3>
+            <p>تنسيق المستندات والخطابات والمواد المكتبية والتجارية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="contact" id="contact">
-<h2>يسعدنا تواصلكم</h2>
-<p>للاستفسار عن الخدمات والأسعار، تواصل معنا مباشرة.</p>
-<p>📍 الرياض، المملكة العربية السعودية</p>
-<p>📱 أضف رقم جوالك وواتساب هنا</p>
-<a class="btn" href="https://wa.me/966554924051" target="_blank">تواصل عبر واتساب</a>
-</section>
-</main>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>يسعدنا خدمتك</h2>
+          <p>للاستفسار عن خدماتنا أو طلب عرض سعر، تواصل معنا مباشرة عبر واتساب.</p>
+          <a class="btn btn-gold" href="https://wa.me/966554924051" target="_blank" rel="noopener">ابدأ محادثة واتساب</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<footer>
-<strong>معمل واستوديو سهم السرعة للتجارة</strong>
-<p class="small">جميع الحقوق محفوظة © سهم السرعة</p>
-</footer>
+  <footer>
+    © <span id="year"></span> معمل واستوديو سهم السرعة للتجارة — جميع الحقوق محفوظة
+  </footer>
+  <a class="float-wa" href="https://wa.me/966554924051" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب ☎</a>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
